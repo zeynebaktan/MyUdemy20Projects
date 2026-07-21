@@ -130,6 +130,7 @@
             this.btnCreate.TabIndex = 13;
             this.btnCreate.Text = "Ekle:";
             this.btnCreate.UseVisualStyleBackColor = true;
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
             // txtCityCountry
             // 
