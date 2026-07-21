@@ -51,5 +51,28 @@ namespace Project01_AdonetCustomer
             sqlConnection.Close();
             MessageBox.Show("Şehir başarıyla eklendi.");
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            sqlConnection.Open();
+            SqlCommand command = new SqlCommand("Delete From TblCity Where CityId = @cityId", sqlConnection);
+            command.Parameters.AddWithValue("@cityId", txtCityId.Text);
+            command.ExecuteNonQuery();
+            sqlConnection.Close();
+            MessageBox.Show("Şehir başarıyla silindi.", "Uyarı!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            sqlConnection.Open();
+            SqlCommand command = new SqlCommand("Update TblCity Set CityName = @cityName, CityCountry = @cityCountry Where CityId = @cityId", sqlConnection);
+            command.Parameters.AddWithValue("@cityName", txtCityName.Text);
+            command.Parameters.AddWithValue("@cityCountry", txtCityCountry.Text);
+            command.Parameters.AddWithValue("@cityId", txtCityId.Text);
+            command.ExecuteNonQuery();
+            sqlConnection.Close();
+            MessageBox.Show("Şehir başarıyla güncellendi.", "Uyarı!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+        }
     }
 }
