@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="Project01_AdonetCustomer/Project01_AdonetCustomer.csproj" Id="2a2a522b-8c02-4395-bca0-be3ccc3da129" />
+  <Project Path="Project02_EntityFrameworkDbFirstProduct/Project02_EntityFrameworkDbFirstProduct.csproj" Id="ae51878e-f3fd-4775-ad0f-57ca98e5e72e" />
 </Solution>
