@@ -63,6 +63,7 @@
             this.btnOpenCustomerForm.TabIndex = 2;
             this.btnOpenCustomerForm.Text = "Müşteri İşlemleri";
             this.btnOpenCustomerForm.UseVisualStyleBackColor = false;
+            this.btnOpenCustomerForm.Click += new System.EventHandler(this.btnOpenCustomerForm_Click);
             // 
             // FrmMap
             // 
