@@ -76,6 +76,7 @@
             this.btnCreate.TabIndex = 25;
             this.btnCreate.Text = "Ekle:";
             this.btnCreate.UseVisualStyleBackColor = false;
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click_1);
             // 
             // btnDelete
             // 
@@ -277,6 +278,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmCustomer";
             this.Text = "Müşteri Formu";
+            this.Load += new System.EventHandler(this.FrmCustomer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

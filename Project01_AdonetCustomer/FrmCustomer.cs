@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Channels;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -45,6 +46,41 @@ namespace Project01_AdonetCustomer
             adapter.Fill(dataTable);
             dataGridView1.DataSource = dataTable;
             sqlConnection.Close();
+        }
+
+        private void FrmCustomer_Load(object sender, EventArgs e)
+        {
+            SqlCommand command = new SqlCommand("Select * From TblCity", sqlConnection);
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+            DataTable dataTable = new DataTable();
+            adapter.Fill(dataTable);
+            cmbCity.ValueMember = "CityId";
+            cmbCity.DisplayMember = "CityName";        
+            cmbCity.DataSource = dataTable;
+        }
+
+        private void btnCreate_Click_1(object sender, EventArgs e)
+        {
+            sqlConnection.Open();
+            SqlCommand command = new SqlCommand("Insert into TblCustomer (CustomerName, CustomerSurname, CustomerBalance, CustomerStatus, CustomerCity) values (@CustomerName, @CustomerSurname, @CustomerBalance, @CustomerStatus, @CustomerCity)", sqlConnection);
+            command.Parameters.AddWithValue("@CustomerName", txtCustomerName.Text);
+            command.Parameters.AddWithValue("@CustomerSurName", txtCustomerSurname.Text);
+            command.Parameters.AddWithValue("@CustomerCity", cmbCity.SelectedValue);
+            command.Parameters.AddWithValue("@CustomerBalance", txtBalance.Text);
+
+            if (rdbActive.Checked)
+            {
+                command.Parameters.AddWithValue("@CustomerStatus", true);
+            }
+
+            if (rdbPasive.Checked)
+            {
+                command.Parameters.AddWithValue("@CustomerStatus", true);
+            }
+
+            command.ExecuteNonQuery();
+            sqlConnection.Close();
+            MessageBox.Show("Müşteri başarıyla eklendi.");
         }
     }
 }
