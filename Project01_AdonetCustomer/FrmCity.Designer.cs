@@ -1,6 +1,6 @@
 ﻿namespace Project01_AdonetCustomer
 {
-    partial class Form1
+    partial class FrmCity
     {
         /// <summary>
         /// Required designer variable.
@@ -56,7 +56,7 @@
             // dataGridView1
             // 
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.RosyBrown;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(345, 34);
             this.dataGridView1.Name = "dataGridView1";
@@ -87,56 +87,62 @@
             // 
             // btnList
             // 
+            this.btnList.BackColor = System.Drawing.Color.LavenderBlush;
             this.btnList.Location = new System.Drawing.Point(86, 131);
             this.btnList.Name = "btnList";
             this.btnList.Size = new System.Drawing.Size(243, 36);
             this.btnList.TabIndex = 9;
             this.btnList.Text = "Listele:";
-            this.btnList.UseVisualStyleBackColor = true;
+            this.btnList.UseVisualStyleBackColor = false;
             this.btnList.Click += new System.EventHandler(this.btnList_Click);
             // 
             // btnUpdate
             // 
+            this.btnUpdate.BackColor = System.Drawing.Color.LavenderBlush;
             this.btnUpdate.Location = new System.Drawing.Point(86, 257);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(243, 36);
             this.btnUpdate.TabIndex = 10;
             this.btnUpdate.Text = "Güncelle:";
-            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.UseVisualStyleBackColor = false;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnSearch
             // 
+            this.btnSearch.BackColor = System.Drawing.Color.LavenderBlush;
             this.btnSearch.Location = new System.Drawing.Point(86, 299);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(243, 36);
             this.btnSearch.TabIndex = 11;
             this.btnSearch.Text = "Ara:";
-            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // btnDelete
             // 
+            this.btnDelete.BackColor = System.Drawing.Color.LavenderBlush;
             this.btnDelete.Location = new System.Drawing.Point(86, 215);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(243, 36);
             this.btnDelete.TabIndex = 12;
             this.btnDelete.Text = "Sil:";
-            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnCreate
             // 
+            this.btnCreate.BackColor = System.Drawing.Color.LavenderBlush;
             this.btnCreate.Location = new System.Drawing.Point(86, 173);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(243, 36);
             this.btnCreate.TabIndex = 13;
             this.btnCreate.Text = "Ekle:";
-            this.btnCreate.UseVisualStyleBackColor = true;
+            this.btnCreate.UseVisualStyleBackColor = false;
             this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
             // txtCityCountry
             // 
+            this.txtCityCountry.BackColor = System.Drawing.Color.LavenderBlush;
             this.txtCityCountry.Location = new System.Drawing.Point(86, 98);
             this.txtCityCountry.Name = "txtCityCountry";
             this.txtCityCountry.Size = new System.Drawing.Size(243, 22);
@@ -144,6 +150,7 @@
             // 
             // txtCityId
             // 
+            this.txtCityId.BackColor = System.Drawing.Color.LavenderBlush;
             this.txtCityId.Location = new System.Drawing.Point(86, 34);
             this.txtCityId.Name = "txtCityId";
             this.txtCityId.Size = new System.Drawing.Size(243, 22);
@@ -151,16 +158,17 @@
             // 
             // txtCityName
             // 
+            this.txtCityName.BackColor = System.Drawing.Color.LavenderBlush;
             this.txtCityName.Location = new System.Drawing.Point(86, 66);
             this.txtCityName.Name = "txtCityName";
             this.txtCityName.Size = new System.Drawing.Size(243, 22);
             this.txtCityName.TabIndex = 16;
             // 
-            // Form1
+            // FrmCity
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Plum;
+            this.BackColor = System.Drawing.Color.LightPink;
             this.ClientSize = new System.Drawing.Size(1024, 374);
             this.Controls.Add(this.txtCityName);
             this.Controls.Add(this.txtCityId);
@@ -174,7 +182,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "FrmCity";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Şehir Bilgi Formu";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
