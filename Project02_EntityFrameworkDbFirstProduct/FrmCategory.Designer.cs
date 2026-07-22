@@ -49,6 +49,7 @@
             this.label1.Size = new System.Drawing.Size(74, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "Kategori Id:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // dataGridView1
             // 
@@ -61,6 +62,7 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(544, 277);
             this.dataGridView1.TabIndex = 2;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // txtCategoryId
             // 
@@ -68,6 +70,7 @@
             this.txtCategoryId.Name = "txtCategoryId";
             this.txtCategoryId.Size = new System.Drawing.Size(274, 22);
             this.txtCategoryId.TabIndex = 3;
+            this.txtCategoryId.TextChanged += new System.EventHandler(this.txtCategoryId_TextChanged);
             // 
             // label2
             // 
@@ -77,6 +80,7 @@
             this.label2.Size = new System.Drawing.Size(83, 16);
             this.label2.TabIndex = 4;
             this.label2.Text = "Kategori Adı:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtCategoryName
             // 
@@ -84,6 +88,7 @@
             this.txtCategoryName.Name = "txtCategoryName";
             this.txtCategoryName.Size = new System.Drawing.Size(274, 22);
             this.txtCategoryName.TabIndex = 5;
+            this.txtCategoryName.TextChanged += new System.EventHandler(this.txtCategoryName_TextChanged);
             // 
             // btnCreate
             // 
