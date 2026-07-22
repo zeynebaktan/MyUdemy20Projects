@@ -74,5 +74,17 @@ namespace Project01_AdonetCustomer
             MessageBox.Show("Şehir başarıyla güncellendi.", "Uyarı!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
         }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            sqlConnection.Open();
+            SqlCommand command = new SqlCommand("Select * From TblCity Where CityName = @cityName", sqlConnection);
+            command.Parameters.AddWithValue("@cityName", txtCityName.Text);
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+            DataTable dataTable = new DataTable();
+            adapter.Fill(dataTable);
+            dataGridView1.DataSource = dataTable;
+            sqlConnection.Close();
+        }
     }
 }

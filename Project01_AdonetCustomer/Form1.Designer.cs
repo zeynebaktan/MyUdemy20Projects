@@ -113,6 +113,7 @@
             this.btnSearch.TabIndex = 11;
             this.btnSearch.Text = "Ara:";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // btnDelete
             // 
