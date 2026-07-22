@@ -138,6 +138,7 @@
             this.btnList.TabIndex = 30;
             this.btnList.Text = "Listele";
             this.btnList.UseVisualStyleBackColor = false;
+            this.btnList.Click += new System.EventHandler(this.btnList_Click);
             // 
             // FrmCategory
             // 
