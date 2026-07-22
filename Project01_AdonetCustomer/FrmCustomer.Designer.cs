@@ -47,6 +47,7 @@
             this.txtCustomerSurname = new System.Windows.Forms.TextBox();
             this.rdbActive = new System.Windows.Forms.RadioButton();
             this.rdbPasive = new System.Windows.Forms.RadioButton();
+            this.btnProcedure = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -111,10 +112,11 @@
             this.btnList.BackColor = System.Drawing.Color.LavenderBlush;
             this.btnList.Location = new System.Drawing.Point(131, 201);
             this.btnList.Name = "btnList";
-            this.btnList.Size = new System.Drawing.Size(243, 36);
+            this.btnList.Size = new System.Drawing.Size(120, 36);
             this.btnList.TabIndex = 21;
             this.btnList.Text = "Listele:";
             this.btnList.UseVisualStyleBackColor = false;
+            this.btnList.Click += new System.EventHandler(this.btnList_Click);
             // 
             // label3
             // 
@@ -236,12 +238,24 @@
             this.rdbPasive.Text = "Pasif";
             this.rdbPasive.UseVisualStyleBackColor = true;
             // 
+            // btnProcedure
+            // 
+            this.btnProcedure.BackColor = System.Drawing.Color.LavenderBlush;
+            this.btnProcedure.Location = new System.Drawing.Point(257, 201);
+            this.btnProcedure.Name = "btnProcedure";
+            this.btnProcedure.Size = new System.Drawing.Size(117, 36);
+            this.btnProcedure.TabIndex = 38;
+            this.btnProcedure.Text = "Prosedür";
+            this.btnProcedure.UseVisualStyleBackColor = false;
+            this.btnProcedure.Click += new System.EventHandler(this.btnProcedure_Click);
+            // 
             // FrmCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LemonChiffon;
             this.ClientSize = new System.Drawing.Size(1114, 432);
+            this.Controls.Add(this.btnProcedure);
             this.Controls.Add(this.rdbPasive);
             this.Controls.Add(this.rdbActive);
             this.Controls.Add(this.cmbCity);
@@ -290,5 +304,6 @@
         private System.Windows.Forms.TextBox txtCustomerSurname;
         private System.Windows.Forms.RadioButton rdbActive;
         private System.Windows.Forms.RadioButton rdbPasive;
+        private System.Windows.Forms.Button btnProcedure;
     }
 }
