@@ -71,7 +71,28 @@ namespace Project02_EntityFrameworkDbFirstProduct
             var values = db.TblProduct.Where(x => x.ProductName == txtProductName.Text).ToList();
             dataGridView1.DataSource = values;
         }
+
+        private void btnProductListWithCategory_Click(object sender, EventArgs e)
+        {
+            var values = db.TblProduct.
+                Join(db.TblCategory,
+                product => product.CategoryId,
+                category => category.CategoryId,
+                (product, category) => new
+                {
+                    ProductId = product.ProductId,
+                    ProductName = product.ProductName,
+                    ProductPrice = product.ProductPrice,
+                    ProductStock = product.ProductStock,
+                    CategoryId = category.CategoryId,
+                    CategoryName = category.CategoryName,
+                })
+                .ToList();
+            dataGridView1.DataSource = values;
+        }
+
+        }
     }
 
-}
+
 

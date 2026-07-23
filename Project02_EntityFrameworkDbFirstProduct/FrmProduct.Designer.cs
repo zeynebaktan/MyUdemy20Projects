@@ -44,6 +44,7 @@
             this.txtProductPrice = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.cmbProductCategory = new System.Windows.Forms.ComboBox();
+            this.btnProductListWithCategory = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,7 +53,7 @@
             this.btnList.BackColor = System.Drawing.SystemColors.Window;
             this.btnList.Location = new System.Drawing.Point(110, 208);
             this.btnList.Name = "btnList";
-            this.btnList.Size = new System.Drawing.Size(274, 36);
+            this.btnList.Size = new System.Drawing.Size(123, 36);
             this.btnList.TabIndex = 40;
             this.btnList.Text = "Listele";
             this.btnList.UseVisualStyleBackColor = false;
@@ -196,12 +197,24 @@
             this.cmbProductCategory.Size = new System.Drawing.Size(274, 24);
             this.cmbProductCategory.TabIndex = 47;
             // 
+            // btnProductListWithCategory
+            // 
+            this.btnProductListWithCategory.BackColor = System.Drawing.SystemColors.Window;
+            this.btnProductListWithCategory.Location = new System.Drawing.Point(261, 208);
+            this.btnProductListWithCategory.Name = "btnProductListWithCategory";
+            this.btnProductListWithCategory.Size = new System.Drawing.Size(123, 36);
+            this.btnProductListWithCategory.TabIndex = 48;
+            this.btnProductListWithCategory.Text = "Listele";
+            this.btnProductListWithCategory.UseVisualStyleBackColor = false;
+            this.btnProductListWithCategory.Click += new System.EventHandler(this.btnProductListWithCategory_Click);
+            // 
             // FrmProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Plum;
             this.ClientSize = new System.Drawing.Size(991, 496);
+            this.Controls.Add(this.btnProductListWithCategory);
             this.Controls.Add(this.cmbProductCategory);
             this.Controls.Add(this.txtProductPrice);
             this.Controls.Add(this.label5);
@@ -245,5 +258,6 @@
         private System.Windows.Forms.TextBox txtProductPrice;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cmbProductCategory;
+        private System.Windows.Forms.Button btnProductListWithCategory;
     }
 }
