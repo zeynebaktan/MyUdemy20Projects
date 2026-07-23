@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Project02_EntityFrameworkDbFirstProduct
@@ -22,7 +16,7 @@ namespace Project02_EntityFrameworkDbFirstProduct
 
         }
 
-        Db2Project20Entities db = new Db2Project20Entities();
+        Db2Project20Entities1 db = new Db2Project20Entities1();
         void ProductList()
         {
             dataGridView1.DataSource = db.TblProduct.ToList();
@@ -62,6 +56,20 @@ namespace Project02_EntityFrameworkDbFirstProduct
             value.CategoryId = int.Parse(cmbProductCategory.SelectedValue.ToString());
             db.SaveChanges();
             ProductList();
+        }
+
+        private void FrmProduct_Load(object sender, EventArgs e)
+        {
+            var values = db.TblCategory.ToList();
+            cmbProductCategory.DisplayMember = "CategoryName";
+            cmbProductCategory.ValueMember = "CategoryId";
+            cmbProductCategory.DataSource = values;
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            var values = db.TblProduct.Where(x => x.ProductName == txtProductName.Text).ToList();
+            dataGridView1.DataSource = values;
         }
     }
 

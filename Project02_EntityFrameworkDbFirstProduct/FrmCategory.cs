@@ -37,7 +37,7 @@ namespace Project02_EntityFrameworkDbFirstProduct
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-
+             
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -49,7 +49,7 @@ namespace Project02_EntityFrameworkDbFirstProduct
             CategoryList();
         }
 
-        Db2Project20Entities db = new Db2Project20Entities();
+        Db2Project20Entities1 db = new Db2Project20Entities1();
 
         void CategoryList()
         {
@@ -83,6 +83,11 @@ namespace Project02_EntityFrameworkDbFirstProduct
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnProductListWithCategory_Click(object sender, EventArgs e)
+        {
+            var values = db.TblProduct.Select(x => x.ProductName);
         }
     }
 }

@@ -13,10 +13,10 @@ namespace Project02_EntityFrameworkDbFirstProduct
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Db2Project20Entities : DbContext
+    public partial class Db2Project20Entities1 : DbContext
     {
-        public Db2Project20Entities()
-            : base("name=Db2Project20Entities")
+        public Db2Project20Entities1()
+            : base("name=Db2Project20Entities1")
         {
         }
     

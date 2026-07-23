@@ -14,7 +14,7 @@ namespace Project02_EntityFrameworkDbFirstProduct
     
     public partial class TblProduct
     {
-        public int Product_Id { get; set; }
+        public int ProductId { get; set; }
         public string ProductName { get; set; }
         public Nullable<int> ProductStock { get; set; }
         public Nullable<decimal> ProductPrice { get; set; }

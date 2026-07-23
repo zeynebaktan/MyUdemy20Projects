@@ -20,7 +20,7 @@ namespace Project02_EntityFrameworkDbFirstProduct
             this.TblProduct = new HashSet<TblProduct>();
         }
     
-        public int Category_Id { get; set; }
+        public int CategoryId { get; set; }
         public string CategoryName { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

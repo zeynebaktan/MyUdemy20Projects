@@ -83,12 +83,13 @@
             // btnSearch
             // 
             this.btnSearch.BackColor = System.Drawing.SystemColors.Window;
-            this.btnSearch.Location = new System.Drawing.Point(110, 376);
+            this.btnSearch.Location = new System.Drawing.Point(109, 376);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(274, 36);
             this.btnSearch.TabIndex = 37;
             this.btnSearch.Text = "Ara:";
             this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // btnUpdate
             // 
@@ -219,6 +220,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmProduct";
             this.Text = "FrmProduct";
+            this.Load += new System.EventHandler(this.FrmProduct_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -38,6 +38,7 @@
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnList = new System.Windows.Forms.Button();
+            this.btnProductListWithCategory = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -139,11 +140,22 @@
             this.btnList.BackColor = System.Drawing.SystemColors.Window;
             this.btnList.Location = new System.Drawing.Point(118, 95);
             this.btnList.Name = "btnList";
-            this.btnList.Size = new System.Drawing.Size(274, 36);
+            this.btnList.Size = new System.Drawing.Size(133, 36);
             this.btnList.TabIndex = 30;
             this.btnList.Text = "Listele";
             this.btnList.UseVisualStyleBackColor = false;
             this.btnList.Click += new System.EventHandler(this.btnList_Click);
+            // 
+            // btnProductListWithCategory
+            // 
+            this.btnProductListWithCategory.BackColor = System.Drawing.SystemColors.Window;
+            this.btnProductListWithCategory.Location = new System.Drawing.Point(257, 95);
+            this.btnProductListWithCategory.Name = "btnProductListWithCategory";
+            this.btnProductListWithCategory.Size = new System.Drawing.Size(133, 36);
+            this.btnProductListWithCategory.TabIndex = 31;
+            this.btnProductListWithCategory.Text = "Listele";
+            this.btnProductListWithCategory.UseVisualStyleBackColor = false;
+            this.btnProductListWithCategory.Click += new System.EventHandler(this.btnProductListWithCategory_Click);
             // 
             // FrmCategory
             // 
@@ -151,6 +163,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Lavender;
             this.ClientSize = new System.Drawing.Size(986, 331);
+            this.Controls.Add(this.btnProductListWithCategory);
             this.Controls.Add(this.btnList);
             this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.btnDelete);
@@ -182,6 +195,7 @@
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnList;
+        private System.Windows.Forms.Button btnProductListWithCategory;
     }
 }
 
