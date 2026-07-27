@@ -107,6 +107,15 @@ namespace Project03_EntityFrameworkStatistics
             var ColaPrice = db.TblProduct.Where(x=>x.ProductName == "Kola").Select(y => y.ProductPrice).FirstOrDefault();
             var TotalColaStockPrice = ColaStock * ColaPrice;
             lblTotalPriceWithStockByCola.Text = TotalColaStockPrice.ToString() + " ₺";
+
+            //Sistemde son sipariş veren müşteri adı 
+            var lastCustomerId = db.TblOrder.OrderByDescending(x => x.OrderId).Select(y => y.CustomerId).FirstOrDefault();
+            var lastCustomerName = db.TblCustomer.Where(x => x.CustomerId == lastCustomerId).Select(y => y.CustomerName).FirstOrDefault();
+            lblLastCustomerName.Text = lastCustomerName.ToString();
+
+            //Ülke çeşitliliği sayısı
+            var CountryDifferentCount = db.TblCustomer.Select(x => x.CustomerCountry).Distinct().Count();
+            lblCountryDifferentCount.Text = CountryDifferentCount.ToString();
         }
     }
 }

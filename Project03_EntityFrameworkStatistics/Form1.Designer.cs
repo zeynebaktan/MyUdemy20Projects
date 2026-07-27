@@ -74,10 +74,10 @@
             this.lblOrderCountFromTurkiyeBySQL = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
-            this.label31 = new System.Windows.Forms.Label();
+            this.lblCountryDifferentCount = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.panel17 = new System.Windows.Forms.Panel();
-            this.label33 = new System.Windows.Forms.Label();
+            this.lblLastCustomerName = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.panel18 = new System.Windows.Forms.Panel();
             this.lblTotalPriceWithStockByCola = new System.Windows.Forms.Label();
@@ -563,62 +563,62 @@
             // panel16
             // 
             this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(123)))), ((int)(((byte)(123)))));
-            this.panel16.Controls.Add(this.label31);
+            this.panel16.Controls.Add(this.lblCountryDifferentCount);
             this.panel16.Controls.Add(this.label32);
             this.panel16.Location = new System.Drawing.Point(1229, 549);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(298, 173);
             this.panel16.TabIndex = 15;
             // 
-            // label31
+            // lblCountryDifferentCount
             // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label31.Location = new System.Drawing.Point(102, 92);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(83, 28);
-            this.label31.TabIndex = 2;
-            this.label31.Text = "label31";
+            this.lblCountryDifferentCount.AutoSize = true;
+            this.lblCountryDifferentCount.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblCountryDifferentCount.Location = new System.Drawing.Point(138, 92);
+            this.lblCountryDifferentCount.Name = "lblCountryDifferentCount";
+            this.lblCountryDifferentCount.Size = new System.Drawing.Size(83, 28);
+            this.lblCountryDifferentCount.TabIndex = 2;
+            this.lblCountryDifferentCount.Text = "label31";
             // 
             // label32
             // 
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label32.Location = new System.Drawing.Point(89, 49);
+            this.label32.Location = new System.Drawing.Point(79, 49);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(105, 17);
+            this.label32.Size = new System.Drawing.Size(140, 17);
             this.label32.TabIndex = 1;
-            this.label32.Text = "Kategori Sayısı";
+            this.label32.Text = "Ülke Çeşitliliği Sayısı";
             // 
             // panel17
             // 
             this.panel17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(170)))), ((int)(((byte)(184)))));
-            this.panel17.Controls.Add(this.label33);
+            this.panel17.Controls.Add(this.lblLastCustomerName);
             this.panel17.Controls.Add(this.label34);
             this.panel17.Location = new System.Drawing.Point(925, 549);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(298, 173);
             this.panel17.TabIndex = 16;
             // 
-            // label33
+            // lblLastCustomerName
             // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label33.Location = new System.Drawing.Point(115, 92);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(83, 28);
-            this.label33.TabIndex = 2;
-            this.label33.Text = "label33";
+            this.lblLastCustomerName.AutoSize = true;
+            this.lblLastCustomerName.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblLastCustomerName.Location = new System.Drawing.Point(88, 92);
+            this.lblLastCustomerName.Name = "lblLastCustomerName";
+            this.lblLastCustomerName.Size = new System.Drawing.Size(83, 28);
+            this.lblLastCustomerName.TabIndex = 2;
+            this.lblLastCustomerName.Text = "label33";
             // 
             // label34
             // 
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label34.Location = new System.Drawing.Point(104, 58);
+            this.label34.Location = new System.Drawing.Point(59, 58);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(96, 17);
+            this.label34.Size = new System.Drawing.Size(175, 17);
             this.label34.TabIndex = 1;
-            this.label34.Text = "Sipariş Sayısı";
+            this.label34.Text = "Son Sipariş Veren Müşteri";
             // 
             // panel18
             // 
@@ -830,10 +830,10 @@
         private System.Windows.Forms.Label lblOrderCountFromTurkiyeBySQL;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Panel panel16;
-        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label lblCountryDifferentCount;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label lblLastCustomerName;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.Label lblTotalPriceWithStockByCola;
