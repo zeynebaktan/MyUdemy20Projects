@@ -44,10 +44,10 @@
             this.lblProductTotalStock = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
+            this.lblProductCountByCategorySebzeAndStatusTrue = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
+            this.lblProductStockSmallerThen100 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.lblTotalPriceByProductNameIsGazoz = new System.Windows.Forms.Label();
@@ -263,22 +263,22 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(249)))), ((int)(((byte)(222)))));
-            this.panel6.Controls.Add(this.label11);
+            this.panel6.Controls.Add(this.lblProductCountByCategorySebzeAndStatusTrue);
             this.panel6.Controls.Add(this.label12);
             this.panel6.Location = new System.Drawing.Point(1228, 191);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(298, 173);
             this.panel6.TabIndex = 5;
             // 
-            // label11
+            // lblProductCountByCategorySebzeAndStatusTrue
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label11.Location = new System.Drawing.Point(102, 92);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(83, 28);
-            this.label11.TabIndex = 2;
-            this.label11.Text = "label11";
+            this.lblProductCountByCategorySebzeAndStatusTrue.AutoSize = true;
+            this.lblProductCountByCategorySebzeAndStatusTrue.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblProductCountByCategorySebzeAndStatusTrue.Location = new System.Drawing.Point(127, 92);
+            this.lblProductCountByCategorySebzeAndStatusTrue.Name = "lblProductCountByCategorySebzeAndStatusTrue";
+            this.lblProductCountByCategorySebzeAndStatusTrue.Size = new System.Drawing.Size(83, 28);
+            this.lblProductCountByCategorySebzeAndStatusTrue.TabIndex = 2;
+            this.lblProductCountByCategorySebzeAndStatusTrue.Text = "label11";
             // 
             // label12
             // 
@@ -286,39 +286,39 @@
             this.label12.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label12.Location = new System.Drawing.Point(89, 49);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(105, 17);
+            this.label12.Size = new System.Drawing.Size(123, 17);
             this.label12.TabIndex = 1;
-            this.label12.Text = "Kategori Sayısı";
+            this.label12.Text = "Aktif Sebze Stoğu";
             // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(234)))));
-            this.panel7.Controls.Add(this.label13);
+            this.panel7.Controls.Add(this.lblProductStockSmallerThen100);
             this.panel7.Controls.Add(this.label14);
             this.panel7.Location = new System.Drawing.Point(925, 191);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(298, 173);
             this.panel7.TabIndex = 6;
             // 
-            // label13
+            // lblProductStockSmallerThen100
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label13.Location = new System.Drawing.Point(115, 92);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(83, 28);
-            this.label13.TabIndex = 2;
-            this.label13.Text = "label13";
+            this.lblProductStockSmallerThen100.AutoSize = true;
+            this.lblProductStockSmallerThen100.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblProductStockSmallerThen100.Location = new System.Drawing.Point(139, 92);
+            this.lblProductStockSmallerThen100.Name = "lblProductStockSmallerThen100";
+            this.lblProductStockSmallerThen100.Size = new System.Drawing.Size(83, 28);
+            this.lblProductStockSmallerThen100.TabIndex = 2;
+            this.lblProductStockSmallerThen100.Text = "label13";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label14.Location = new System.Drawing.Point(103, 58);
+            this.label14.Location = new System.Drawing.Point(50, 49);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(96, 17);
+            this.label14.Size = new System.Drawing.Size(206, 17);
             this.label14.TabIndex = 1;
-            this.label14.Text = "Sipariş Sayısı";
+            this.label14.Text = "Stok Sayısı 100\'den Az Ürünler";
             // 
             // panel8
             // 
@@ -800,10 +800,10 @@
         private System.Windows.Forms.Label lblProductTotalStock;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lblProductCountByCategorySebzeAndStatusTrue;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label lblProductStockSmallerThen100;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label lblTotalPriceByProductNameIsGazoz;
