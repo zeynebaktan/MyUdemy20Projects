@@ -88,6 +88,19 @@ namespace Project03_EntityFrameworkStatistics
                                                           where c.CategoryName == "Meyve"
                                                           select o.TotalPrice).Sum();
             lblOrderTotalPriceByCategoryIsMeyveByEF.Text = orderTotalPriceByCategoryIsMeyveWithEF.ToString() + " ₺";
+
+            //Son eklenen ürünün adı
+            var LastProductName = db.TblProduct.OrderByDescending(x => x.ProductId).Select(y => y.ProductName).FirstOrDefault();
+            lblLastProductName.Text = LastProductName.ToString();
+
+            //Son eklenen ürünün kategori adı
+            var LastProductCategoryId = db.TblProduct.OrderByDescending(x => x.ProductId).Select(y => y.CategoryId).FirstOrDefault();
+            var LastProductCategoryName = db.TblCategory.Where(x => x.CategoryId == LastProductCategoryId).Select(y => y.CategoryName).FirstOrDefault();
+            lblLastProductCategoryName.Text = LastProductCategoryName.ToString();
+
+            //Aktif ürün sayısı
+            var ActiveProductCount = db.TblProduct.Where(x => x.ProductStatus == true).Count();
+            lblActiveProductCount.Text = ActiveProductCount.ToString();
         }
     }
 }
