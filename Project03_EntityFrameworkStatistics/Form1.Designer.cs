@@ -514,7 +514,7 @@
             // 
             this.lblOrderCountFromTurkiyeByEF.AutoSize = true;
             this.lblOrderCountFromTurkiyeByEF.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblOrderCountFromTurkiyeByEF.Location = new System.Drawing.Point(119, 92);
+            this.lblOrderCountFromTurkiyeByEF.Location = new System.Drawing.Point(135, 92);
             this.lblOrderCountFromTurkiyeByEF.Name = "lblOrderCountFromTurkiyeByEF";
             this.lblOrderCountFromTurkiyeByEF.Size = new System.Drawing.Size(83, 28);
             this.lblOrderCountFromTurkiyeByEF.TabIndex = 2;

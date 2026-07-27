@@ -66,6 +66,15 @@ namespace Project03_EntityFrameworkStatistics
             //Türkiye'den yapılan siparişler SQL Query
             var OrderCountFromTurkiye = db.Database.SqlQuery<int>("Select count(*) From TblOrder Where CustomerId In (Select CustomerId From TblCustomer Where CustomerCountry='Türkiye')").FirstOrDefault();
             lblOrderCountFromTurkiyeBySQL.Text = OrderCountFromTurkiye.ToString();
+
+            //Türkiye'den yapılan siparişler EF Metodu
+            var TurkishCustomerIds = db.TblCustomer.Where(x => x.CustomerCountry == "Türkiye")
+                                 .Select(y => y.CustomerId)
+                                 .ToList();
+            var OrderCountFromTurkiyeWithEF = db.TblOrder.Count(z => TurkishCustomerIds.Contains(z.CustomerId.Value));
+            lblOrderCountFromTurkiyeByEF.Text = OrderCountFromTurkiyeWithEF.ToString();
+
+            lblOrderCountFromTurkiyeByEF.Text = OrderCountFromTurkiyeWithEF.ToString();
         }
     }
 }
