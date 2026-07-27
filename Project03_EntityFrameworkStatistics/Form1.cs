@@ -75,6 +75,10 @@ namespace Project03_EntityFrameworkStatistics
             lblOrderCountFromTurkiyeByEF.Text = OrderCountFromTurkiyeWithEF.ToString();
 
             lblOrderCountFromTurkiyeByEF.Text = OrderCountFromTurkiyeWithEF.ToString();
+
+            //Siparişler içinde kategorisi meyve olan ürünlerin toplam satış fiyatı
+            var orderTotalPriceByCategoryIsMeyve = db.Database.SqlQuery<decimal>("Select Sum(o.TotalPrice) From TblOrder o Join TblProduct p On o.ProductId=p.ProductId Join TblCategory c On p.CategoryId=c.CategoryId Where c.CategoryName='Meyve'").FirstOrDefault();
+            lblOrderTotalPriceByCategoryIsMeyve.Text = orderTotalPriceByCategoryIsMeyve.ToString() + " ₺";
         }
     }
 }
