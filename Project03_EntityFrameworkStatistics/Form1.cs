@@ -39,6 +39,20 @@ namespace Project03_EntityFrameworkStatistics
             //Toplam Stok Sayısı
             var TotalProductStockCount = db.TblProduct.Sum(x => x.ProductStock);
             lblProductTotalStock.Text = TotalProductStockCount.ToString();
+
+            //Ortalama Ürün Fiyatı
+            var AverageProductPrice = db.TblProduct.Average(x => x.ProductPrice);
+            lblProductAveragePrice.Text = AverageProductPrice.ToString() + " ₺";
+
+            //Toplam Meyve Stoğu Sayısı
+            var TotalProductCountByCategoryIsFruit = db.TblProduct.Where(x => x.CategoryId == 1).Sum(y => y.ProductStock);
+            lblProductCountByCategoryIsFruit.Text = TotalProductCountByCategoryIsFruit.ToString();
+
+            //Gazoz İsimli Ürünün Toplam İşlem Hacmi
+            var TotalPriceByProductNameIsGazozGetStock = db.TblProduct.Where(x => x.ProductName == "Gazoz").Select(y => y.ProductStock).FirstOrDefault();
+            var TotalPriceByProductNameIsGazozUnitPrice = db.TblProduct.Where(x => x.ProductName == "Gazoz").Select(y => y.ProductPrice).FirstOrDefault();
+            var TotalPriceByProductNameIsGazoz = TotalPriceByProductNameIsGazozGetStock * TotalPriceByProductNameIsGazozUnitPrice;
+            lblTotalPriceByProductNameIsGazoz.Text = TotalPriceByProductNameIsGazoz.ToString() + " ₺";
         }
 
     }
