@@ -101,6 +101,12 @@ namespace Project03_EntityFrameworkStatistics
             //Aktif ürün sayısı
             var ActiveProductCount = db.TblProduct.Where(x => x.ProductStatus == true).Count();
             lblActiveProductCount.Text = ActiveProductCount.ToString();
+
+            //Toplam kola stok satışlarından kazanılan para 
+            var ColaStock = db.TblProduct.Where(x => x.ProductName == "Kola").Select(y => y.ProductStock).FirstOrDefault();
+            var ColaPrice = db.TblProduct.Where(x=>x.ProductName == "Kola").Select(y => y.ProductPrice).FirstOrDefault();
+            var TotalColaStockPrice = ColaStock * ColaPrice;
+            lblTotalPriceWithStockByCola.Text = TotalColaStockPrice.ToString() + " ₺";
         }
     }
 }
