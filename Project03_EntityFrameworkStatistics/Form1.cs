@@ -62,7 +62,10 @@ namespace Project03_EntityFrameworkStatistics
             int id = db.TblCategory.Where(x => x.CategoryName == "Sebze").Select(y => y.CategoryId).FirstOrDefault();
             var productStockCountByCategoryNameIsSebzeAndStatusTrue = db.TblProduct.Where(x => x.CategoryId == (db.TblCategory.Where(y => y.CategoryName == "Sebze").Select(z => z.CategoryId).FirstOrDefault()) && x.ProductStatus == true).Sum(y => y.ProductStock);
             lblProductCountByCategorySebzeAndStatusTrue.Text = productStockCountByCategoryNameIsSebzeAndStatusTrue.ToString();
-        }
 
+            //Türkiye'den yapılan siparişler SQL Query
+            var OrderCountFromTurkiye = db.Database.SqlQuery<int>("Select count(*) From TblOrder Where CustomerId In (Select CustomerId From TblCustomer Where CustomerCountry='Türkiye')").FirstOrDefault();
+            lblOrderCountFromTurkiyeBySQL.Text = OrderCountFromTurkiye.ToString();
+        }
     }
 }

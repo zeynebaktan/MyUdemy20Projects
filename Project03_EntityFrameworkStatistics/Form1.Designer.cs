@@ -68,10 +68,10 @@
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.label27 = new System.Windows.Forms.Label();
+            this.lblOrderCountFromTurkiyeByEF = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
-            this.label29 = new System.Windows.Forms.Label();
+            this.lblOrderCountFromTurkiyeBySQL = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
             this.label31 = new System.Windows.Forms.Label();
@@ -503,62 +503,62 @@
             // panel14
             // 
             this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(151)))), ((int)(((byte)(208)))));
-            this.panel14.Controls.Add(this.label27);
+            this.panel14.Controls.Add(this.lblOrderCountFromTurkiyeByEF);
             this.panel14.Controls.Add(this.label28);
             this.panel14.Location = new System.Drawing.Point(316, 370);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(298, 173);
             this.panel14.TabIndex = 13;
             // 
-            // label27
+            // lblOrderCountFromTurkiyeByEF
             // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label27.Location = new System.Drawing.Point(119, 92);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(83, 28);
-            this.label27.TabIndex = 2;
-            this.label27.Text = "label27";
+            this.lblOrderCountFromTurkiyeByEF.AutoSize = true;
+            this.lblOrderCountFromTurkiyeByEF.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblOrderCountFromTurkiyeByEF.Location = new System.Drawing.Point(119, 92);
+            this.lblOrderCountFromTurkiyeByEF.Name = "lblOrderCountFromTurkiyeByEF";
+            this.lblOrderCountFromTurkiyeByEF.Size = new System.Drawing.Size(83, 28);
+            this.lblOrderCountFromTurkiyeByEF.TabIndex = 2;
+            this.lblOrderCountFromTurkiyeByEF.Text = "label27";
             // 
             // label28
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label28.Location = new System.Drawing.Point(104, 58);
+            this.label28.Location = new System.Drawing.Point(40, 58);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(86, 17);
+            this.label28.Size = new System.Drawing.Size(229, 17);
             this.label28.TabIndex = 1;
-            this.label28.Text = " Ürün Sayısı";
+            this.label28.Text = "Türkiye\'den Yapılan Siparişler - EF";
             // 
             // panel15
             // 
             this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(245)))), ((int)(((byte)(167)))));
-            this.panel15.Controls.Add(this.label29);
+            this.panel15.Controls.Add(this.lblOrderCountFromTurkiyeBySQL);
             this.panel15.Controls.Add(this.label30);
             this.panel15.Location = new System.Drawing.Point(12, 370);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(298, 173);
             this.panel15.TabIndex = 9;
             // 
-            // label29
+            // lblOrderCountFromTurkiyeBySQL
             // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label29.Location = new System.Drawing.Point(102, 92);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(83, 28);
-            this.label29.TabIndex = 2;
-            this.label29.Text = "label29";
+            this.lblOrderCountFromTurkiyeBySQL.AutoSize = true;
+            this.lblOrderCountFromTurkiyeBySQL.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblOrderCountFromTurkiyeBySQL.Location = new System.Drawing.Point(134, 92);
+            this.lblOrderCountFromTurkiyeBySQL.Name = "lblOrderCountFromTurkiyeBySQL";
+            this.lblOrderCountFromTurkiyeBySQL.Size = new System.Drawing.Size(83, 28);
+            this.lblOrderCountFromTurkiyeBySQL.TabIndex = 2;
+            this.lblOrderCountFromTurkiyeBySQL.Text = "label29";
             // 
             // label30
             // 
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label30.Location = new System.Drawing.Point(87, 58);
+            this.label30.Location = new System.Drawing.Point(31, 58);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(105, 17);
+            this.label30.Size = new System.Drawing.Size(240, 17);
             this.label30.TabIndex = 1;
-            this.label30.Text = "Kategori Sayısı";
+            this.label30.Text = "Türkiye\'den Yapılan Siparişler - SQL";
             // 
             // panel16
             // 
@@ -824,10 +824,10 @@
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label lblOrderCountFromTurkiyeByEF;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label lblOrderCountFromTurkiyeBySQL;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Label label31;
