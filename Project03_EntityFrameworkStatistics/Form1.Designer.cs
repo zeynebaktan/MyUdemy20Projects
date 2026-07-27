@@ -62,7 +62,7 @@
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.label23 = new System.Windows.Forms.Label();
+            this.lblOrderTotalPriceByCategoryIsMeyveByEF = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
             this.lblOrderTotalPriceByCategoryIsMeyve = new System.Windows.Forms.Label();
@@ -443,32 +443,32 @@
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(49)))), ((int)(((byte)(241)))));
-            this.panel12.Controls.Add(this.label23);
+            this.panel12.Controls.Add(this.lblOrderTotalPriceByCategoryIsMeyveByEF);
             this.panel12.Controls.Add(this.label24);
             this.panel12.Location = new System.Drawing.Point(924, 370);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(298, 173);
             this.panel12.TabIndex = 11;
             // 
-            // label23
+            // lblOrderTotalPriceByCategoryIsMeyveByEF
             // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label23.Location = new System.Drawing.Point(115, 92);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(83, 28);
-            this.label23.TabIndex = 2;
-            this.label23.Text = "label23";
+            this.lblOrderTotalPriceByCategoryIsMeyveByEF.AutoSize = true;
+            this.lblOrderTotalPriceByCategoryIsMeyveByEF.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblOrderTotalPriceByCategoryIsMeyveByEF.Location = new System.Drawing.Point(103, 92);
+            this.lblOrderTotalPriceByCategoryIsMeyveByEF.Name = "lblOrderTotalPriceByCategoryIsMeyveByEF";
+            this.lblOrderTotalPriceByCategoryIsMeyveByEF.Size = new System.Drawing.Size(83, 28);
+            this.lblOrderTotalPriceByCategoryIsMeyveByEF.TabIndex = 2;
+            this.lblOrderTotalPriceByCategoryIsMeyveByEF.Text = "label23";
             // 
             // label24
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label24.Location = new System.Drawing.Point(104, 58);
+            this.label24.Location = new System.Drawing.Point(51, 58);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(96, 17);
+            this.label24.Size = new System.Drawing.Size(194, 17);
             this.label24.TabIndex = 1;
-            this.label24.Text = "Sipariş Sayısı";
+            this.label24.Text = "Meyve Satışları Kazancı - EF";
             // 
             // panel13
             // 
@@ -818,7 +818,7 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label lblOrderTotalPriceByCategoryIsMeyveByEF;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Label lblOrderTotalPriceByCategoryIsMeyve;
