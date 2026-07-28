@@ -2,4 +2,5 @@
   <Project Path="Project01_AdonetCustomer/Project01_AdonetCustomer.csproj" Id="2a2a522b-8c02-4395-bca0-be3ccc3da129" />
   <Project Path="Project02_EntityFrameworkDbFirstProduct/Project02_EntityFrameworkDbFirstProduct.csproj" Id="ae51878e-f3fd-4775-ad0f-57ca98e5e72e" />
   <Project Path="Project03_EntityFrameworkStatistics/Project03_EntityFrameworkStatistics.csproj" Id="7ad00af7-d3fc-4376-8d92-315dc6382b54" />
+  <Project Path="Project04_EntityFrameworkCodeFirstMovie/Project04_EntityFrameworkCodeFirstMovie.csproj" Id="59bb942f-f3e5-4546-8596-8dacf2bca4bc" />
 </Solution>
