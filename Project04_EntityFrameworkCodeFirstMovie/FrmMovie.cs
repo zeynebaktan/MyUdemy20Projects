@@ -80,5 +80,22 @@ namespace Project04_EntityFrameworkCodeFirstMovie
             context.SaveChanges();
             MessageBox.Show("İşlem Başarılı");
         }
+
+        private void btnMovieWithCategory_Click(object sender, EventArgs e)
+        {
+            var values = context.Movies
+                         .Join(context.Categories,
+                         movie=> movie.CategoryId,
+                         Category => Category.CategoryId,
+                         (movie, Category)=> new
+                         { 
+                              MovieId = movie.MovieId,
+                              MovieTitle = movie.MovieTitle,
+                              Description = movie.Description,
+                              Duration = movie.Duration,
+                              CategoryName = Category.CategoryName,
+                         }).ToList();
+            dataGridView1 .DataSource = values;
+        }
     }
 }

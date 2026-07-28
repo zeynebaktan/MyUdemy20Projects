@@ -46,6 +46,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.mskDate = new System.Windows.Forms.MaskedTextBox();
             this.cmbCategory = new System.Windows.Forms.ComboBox();
+            this.btnMovieWithCategory = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -126,7 +127,7 @@
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(189)))), ((int)(((byte)(164)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 251);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 262);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -220,11 +221,23 @@
             this.cmbCategory.Size = new System.Drawing.Size(260, 24);
             this.cmbCategory.TabIndex = 31;
             // 
+            // btnMovieWithCategory
+            // 
+            this.btnMovieWithCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(245)))), ((int)(((byte)(233)))));
+            this.btnMovieWithCategory.Location = new System.Drawing.Point(396, 214);
+            this.btnMovieWithCategory.Name = "btnMovieWithCategory";
+            this.btnMovieWithCategory.Size = new System.Drawing.Size(170, 34);
+            this.btnMovieWithCategory.TabIndex = 32;
+            this.btnMovieWithCategory.Text = "Listele 2";
+            this.btnMovieWithCategory.UseVisualStyleBackColor = false;
+            this.btnMovieWithCategory.Click += new System.EventHandler(this.btnMovieWithCategory_Click);
+            // 
             // FrmMovie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1074, 513);
+            this.ClientSize = new System.Drawing.Size(1074, 524);
+            this.Controls.Add(this.btnMovieWithCategory);
             this.Controls.Add(this.cmbCategory);
             this.Controls.Add(this.mskDate);
             this.Controls.Add(this.txtDetails);
@@ -272,5 +285,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.MaskedTextBox mskDate;
         private System.Windows.Forms.ComboBox cmbCategory;
+        private System.Windows.Forms.Button btnMovieWithCategory;
     }
 }
