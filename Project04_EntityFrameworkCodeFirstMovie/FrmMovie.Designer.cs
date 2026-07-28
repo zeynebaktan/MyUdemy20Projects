@@ -88,6 +88,7 @@
             this.btnCreate.TabIndex = 17;
             this.btnCreate.Text = "Ekle";
             this.btnCreate.UseVisualStyleBackColor = false;
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
             // btnList
             // 
@@ -209,6 +210,7 @@
             // 
             // cmbCategory
             // 
+            this.cmbCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCategory.FormattingEnabled = true;
             this.cmbCategory.Location = new System.Drawing.Point(114, 207);
             this.cmbCategory.Name = "cmbCategory";
