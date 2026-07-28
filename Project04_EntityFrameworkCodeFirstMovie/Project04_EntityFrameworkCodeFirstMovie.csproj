@@ -79,17 +79,27 @@
     <Compile Include="Migrations\202607281122177_mig2.Designer.cs">
       <DependentUpon>202607281122177_mig2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202607281233088_remove_extra_column.cs" />
+    <Compile Include="Migrations\202607281233088_remove_extra_column.Designer.cs">
+      <DependentUpon>202607281233088_remove_extra_column.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmMovie.resx">
+      <DependentUpon>FrmMovie.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202607281107295_mig1.resx">
       <DependentUpon>202607281107295_mig1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202607281122177_mig2.resx">
       <DependentUpon>202607281122177_mig2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202607281233088_remove_extra_column.resx">
+      <DependentUpon>202607281233088_remove_extra_column.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

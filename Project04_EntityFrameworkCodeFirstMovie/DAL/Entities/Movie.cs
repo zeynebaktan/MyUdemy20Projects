@@ -15,7 +15,6 @@ namespace Project04_EntityFrameworkCodeFirstMovie.DAL.Entities
         public DateTime CreatedDate { get; set; }
         public int CategoryId { get; set; }
         public virtual Category Category { get; set; }
-        public List<Movie> Movies { get; set; }
 
     }
 }

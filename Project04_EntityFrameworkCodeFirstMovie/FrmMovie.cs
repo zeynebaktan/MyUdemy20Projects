@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project04_EntityFrameworkCodeFirstMovie.DAL.Context;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,18 @@ namespace Project04_EntityFrameworkCodeFirstMovie
         public FrmMovie()
         {
             InitializeComponent();
+        }
+
+        MovieContext context = new MovieContext();
+        private void btnList_Click(object sender, EventArgs e)
+        {
+            var values = context.Movies.ToList();
+            dataGridView1.DataSource = values;
+        }
+
+        private void FrmMovie_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
