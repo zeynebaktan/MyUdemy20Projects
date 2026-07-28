@@ -65,6 +65,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMovie.Designer.cs">
+      <DependentUpon>FrmMovie.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\202607281107295_mig1.cs" />
     <Compile Include="Migrations\202607281107295_mig1.Designer.cs">
       <DependentUpon>202607281107295_mig1.cs</DependentUpon>
