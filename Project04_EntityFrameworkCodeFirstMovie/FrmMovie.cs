@@ -52,5 +52,33 @@ namespace Project04_EntityFrameworkCodeFirstMovie
             context.SaveChanges();
             MessageBox.Show("İşlem Başarılı");
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            int id = int.Parse(txtId.Text);
+            var value = context.Movies.Find(id);
+            context.Movies.Remove(value);
+            context.SaveChanges();
+            MessageBox.Show("İşlem Başarılı");
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            var values = context.Movies.Where(x=>x.MovieTitle == txtName.Text).ToList();
+            dataGridView1.DataSource = values;
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            int id = int.Parse(txtId.Text);
+            var values = context.Movies.Find(id);
+            values.Duration = int.Parse(txtDuration.Text);
+            values.MovieTitle = txtName.Text;
+            values.Description = txtDetails.Text;
+            values.CreatedDate = DateTime.Parse(mskDate.Text);
+            values.CategoryId = int.Parse(cmbCategory.SelectedValue.ToString());
+            context.SaveChanges();
+            MessageBox.Show("İşlem Başarılı");
+        }
     }
 }
