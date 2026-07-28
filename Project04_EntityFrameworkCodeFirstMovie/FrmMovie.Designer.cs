@@ -52,7 +52,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(245)))), ((int)(((byte)(233)))));
+            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(219)))), ((int)(((byte)(156)))));
             this.btnUpdate.Location = new System.Drawing.Point(396, 174);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(170, 34);
@@ -63,7 +63,7 @@
             // 
             // btnSearch
             // 
-            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(245)))), ((int)(((byte)(233)))));
+            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(219)))), ((int)(((byte)(156)))));
             this.btnSearch.Location = new System.Drawing.Point(396, 133);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(170, 34);
@@ -74,7 +74,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(245)))), ((int)(((byte)(233)))));
+            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(219)))), ((int)(((byte)(156)))));
             this.btnDelete.Location = new System.Drawing.Point(396, 93);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(170, 34);
@@ -85,7 +85,7 @@
             // 
             // btnCreate
             // 
-            this.btnCreate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(245)))), ((int)(((byte)(233)))));
+            this.btnCreate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(219)))), ((int)(((byte)(156)))));
             this.btnCreate.Location = new System.Drawing.Point(396, 52);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(170, 34);
@@ -96,7 +96,7 @@
             // 
             // btnList
             // 
-            this.btnList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(245)))), ((int)(((byte)(233)))));
+            this.btnList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(219)))), ((int)(((byte)(156)))));
             this.btnList.Location = new System.Drawing.Point(396, 12);
             this.btnList.Name = "btnList";
             this.btnList.Size = new System.Drawing.Size(170, 34);
@@ -107,7 +107,8 @@
             // 
             // txtName
             // 
-            this.txtName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(245)))), ((int)(((byte)(233)))));
+            this.txtName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(250)))), ((int)(((byte)(229)))));
+            this.txtName.ForeColor = System.Drawing.Color.Black;
             this.txtName.Location = new System.Drawing.Point(114, 52);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(261, 22);
@@ -125,7 +126,7 @@
             // dataGridView1
             // 
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(189)))), ((int)(((byte)(164)))));
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(211)))), ((int)(((byte)(185)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 262);
             this.dataGridView1.Name = "dataGridView1";
@@ -136,7 +137,8 @@
             // 
             // txtId
             // 
-            this.txtId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(245)))), ((int)(((byte)(233)))));
+            this.txtId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(250)))), ((int)(((byte)(229)))));
+            this.txtId.ForeColor = System.Drawing.Color.Black;
             this.txtId.Location = new System.Drawing.Point(114, 13);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(261, 22);
@@ -171,7 +173,8 @@
             // 
             // txtDetails
             // 
-            this.txtDetails.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(245)))), ((int)(((byte)(233)))));
+            this.txtDetails.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(250)))), ((int)(((byte)(229)))));
+            this.txtDetails.ForeColor = System.Drawing.Color.Black;
             this.txtDetails.Location = new System.Drawing.Point(114, 129);
             this.txtDetails.Name = "txtDetails";
             this.txtDetails.Size = new System.Drawing.Size(261, 22);
@@ -188,7 +191,8 @@
             // 
             // txtDuration
             // 
-            this.txtDuration.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(245)))), ((int)(((byte)(233)))));
+            this.txtDuration.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(250)))), ((int)(((byte)(229)))));
+            this.txtDuration.ForeColor = System.Drawing.Color.Black;
             this.txtDuration.Location = new System.Drawing.Point(114, 90);
             this.txtDuration.Name = "txtDuration";
             this.txtDuration.Size = new System.Drawing.Size(261, 22);
@@ -205,6 +209,8 @@
             // 
             // mskDate
             // 
+            this.mskDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(250)))), ((int)(((byte)(229)))));
+            this.mskDate.ForeColor = System.Drawing.Color.Black;
             this.mskDate.Location = new System.Drawing.Point(114, 168);
             this.mskDate.Mask = "00/00/0000";
             this.mskDate.Name = "mskDate";
@@ -214,7 +220,9 @@
             // 
             // cmbCategory
             // 
+            this.cmbCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(250)))), ((int)(((byte)(229)))));
             this.cmbCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCategory.ForeColor = System.Drawing.Color.Black;
             this.cmbCategory.FormattingEnabled = true;
             this.cmbCategory.Location = new System.Drawing.Point(114, 207);
             this.cmbCategory.Name = "cmbCategory";
@@ -223,7 +231,7 @@
             // 
             // btnMovieWithCategory
             // 
-            this.btnMovieWithCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(245)))), ((int)(((byte)(233)))));
+            this.btnMovieWithCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(219)))), ((int)(((byte)(156)))));
             this.btnMovieWithCategory.Location = new System.Drawing.Point(396, 214);
             this.btnMovieWithCategory.Name = "btnMovieWithCategory";
             this.btnMovieWithCategory.Size = new System.Drawing.Size(170, 34);
@@ -236,6 +244,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(249)))), ((int)(((byte)(223)))));
             this.ClientSize = new System.Drawing.Size(1074, 524);
             this.Controls.Add(this.btnMovieWithCategory);
             this.Controls.Add(this.cmbCategory);
