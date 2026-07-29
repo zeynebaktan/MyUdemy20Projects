@@ -4,5 +4,5 @@
   <Project Path="Project03_EntityFrameworkStatistics/Project03_EntityFrameworkStatistics.csproj" Id="7ad00af7-d3fc-4376-8d92-315dc6382b54" />
   <Project Path="Project04_EntityFrameworkCodeFirstMovie/Project04_EntityFrameworkCodeFirstMovie.csproj" Id="59bb942f-f3e5-4546-8596-8dacf2bca4bc" />
   <Project Path="Project05_DapperNorthwind/Project05_DapperNorthwind.csproj" Id="38e37204-e42f-44b5-b0dc-9a6629bf908e" />
-  <Project Path="Project06_ApiWeather/Project06_ApiWeather.csproj" Id="99f3b997-6d86-4b51-8d1d-77078346b0ba" />
+  <Project Path="Project06_ApiWeather/Project06_ApiWeather.csproj" Id="a318c62a-b4ac-4c82-bfe8-012145d711d6" />
 </Solution>

@@ -1,4 +1,4 @@
-@Project06_ApiWeather_HostAddress = http://localhost:5229
+@Project06_ApiWeather_HostAddress = http://localhost:5294
 
 GET {{Project06_ApiWeather_HostAddress}}/weatherforecast/
 Accept: application/json
