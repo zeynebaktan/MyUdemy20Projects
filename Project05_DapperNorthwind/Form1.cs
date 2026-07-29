@@ -27,5 +27,14 @@ namespace Project05_DapperNorthwind
             var values = await connection.QueryAsync<ResultCategoryDto>(query);
             dataGridView1.DataSource = values;
         }
+
+        private async void btnCreateCategory_Click(object sender, EventArgs e)
+        {
+            string query = "insert into Categories (CategoryName, Description) Values(@p1, @p2)";
+            var parameteres = new DynamicParameters();
+            parameteres.Add("@p1", txtCategoryName.Text);
+            parameteres.Add("@p2", txtCtagoryDescription.Text);
+            await connection.ExecuteAsync(query, parameteres);
+        }
     }
 }
