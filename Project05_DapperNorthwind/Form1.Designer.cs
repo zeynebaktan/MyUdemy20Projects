@@ -39,7 +39,13 @@
             this.txtCategoryId = new System.Windows.Forms.TextBox();
             this.btnCategoryUpdate = new System.Windows.Forms.Button();
             this.btnCategoryDelete = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblProductCount = new System.Windows.Forms.Label();
+            this.lblAvgProductStock = new System.Windows.Forms.Label();
+            this.lblSeaFoodProductTotalPrice = new System.Windows.Forms.Label();
+            this.lblCategoryCount = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnCategoryList
@@ -150,12 +156,67 @@
             this.btnCategoryDelete.UseVisualStyleBackColor = false;
             this.btnCategoryDelete.Click += new System.EventHandler(this.btnCategoryDelete_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(197)))), ((int)(((byte)(170)))));
+            this.groupBox1.Controls.Add(this.lblProductCount);
+            this.groupBox1.Controls.Add(this.lblAvgProductStock);
+            this.groupBox1.Controls.Add(this.lblSeaFoodProductTotalPrice);
+            this.groupBox1.Controls.Add(this.lblCategoryCount);
+            this.groupBox1.Location = new System.Drawing.Point(623, 24);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(495, 384);
+            this.groupBox1.TabIndex = 11;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Dapper İstatistikler";
+            // 
+            // lblProductCount
+            // 
+            this.lblProductCount.AutoSize = true;
+            this.lblProductCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblProductCount.Location = new System.Drawing.Point(30, 98);
+            this.lblProductCount.Name = "lblProductCount";
+            this.lblProductCount.Size = new System.Drawing.Size(58, 22);
+            this.lblProductCount.TabIndex = 3;
+            this.lblProductCount.Text = "label4";
+            // 
+            // lblAvgProductStock
+            // 
+            this.lblAvgProductStock.AutoSize = true;
+            this.lblAvgProductStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblAvgProductStock.Location = new System.Drawing.Point(30, 141);
+            this.lblAvgProductStock.Name = "lblAvgProductStock";
+            this.lblAvgProductStock.Size = new System.Drawing.Size(58, 22);
+            this.lblAvgProductStock.TabIndex = 2;
+            this.lblAvgProductStock.Text = "label4";
+            // 
+            // lblSeaFoodProductTotalPrice
+            // 
+            this.lblSeaFoodProductTotalPrice.AutoSize = true;
+            this.lblSeaFoodProductTotalPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblSeaFoodProductTotalPrice.Location = new System.Drawing.Point(30, 183);
+            this.lblSeaFoodProductTotalPrice.Name = "lblSeaFoodProductTotalPrice";
+            this.lblSeaFoodProductTotalPrice.Size = new System.Drawing.Size(58, 22);
+            this.lblSeaFoodProductTotalPrice.TabIndex = 1;
+            this.lblSeaFoodProductTotalPrice.Text = "label4";
+            // 
+            // lblCategoryCount
+            // 
+            this.lblCategoryCount.AutoSize = true;
+            this.lblCategoryCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblCategoryCount.Location = new System.Drawing.Point(30, 59);
+            this.lblCategoryCount.Name = "lblCategoryCount";
+            this.lblCategoryCount.Size = new System.Drawing.Size(58, 22);
+            this.lblCategoryCount.TabIndex = 0;
+            this.lblCategoryCount.Text = "label4";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(255)))), ((int)(((byte)(220)))));
-            this.ClientSize = new System.Drawing.Size(638, 429);
+            this.ClientSize = new System.Drawing.Size(1130, 429);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnCategoryDelete);
             this.Controls.Add(this.btnCategoryUpdate);
             this.Controls.Add(this.txtCategoryId);
@@ -169,7 +230,10 @@
             this.Controls.Add(this.btnCategoryList);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -187,6 +251,11 @@
         private System.Windows.Forms.Button btnCategoryList;
         private System.Windows.Forms.Button btnCategoryUpdate;
         private System.Windows.Forms.Button btnCategoryDelete;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label lblCategoryCount;
+        private System.Windows.Forms.Label lblProductCount;
+        private System.Windows.Forms.Label lblAvgProductStock;
+        private System.Windows.Forms.Label lblSeaFoodProductTotalPrice;
     }
 }
 
