@@ -31,7 +31,7 @@
             this.btnCategoryList = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.txtCategoryName = new System.Windows.Forms.TextBox();
-            this.txtCtagoryDescription = new System.Windows.Forms.TextBox();
+            this.txtCategoryDescription = new System.Windows.Forms.TextBox();
             this.btnCreateCategory = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -73,14 +73,14 @@
             this.txtCategoryName.Size = new System.Drawing.Size(260, 22);
             this.txtCategoryName.TabIndex = 2;
             // 
-            // txtCtagoryDescription
+            // txtCategoryDescription
             // 
-            this.txtCtagoryDescription.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(236)))), ((int)(((byte)(243)))));
-            this.txtCtagoryDescription.Location = new System.Drawing.Point(151, 73);
-            this.txtCtagoryDescription.Multiline = true;
-            this.txtCtagoryDescription.Name = "txtCtagoryDescription";
-            this.txtCtagoryDescription.Size = new System.Drawing.Size(260, 114);
-            this.txtCtagoryDescription.TabIndex = 3;
+            this.txtCategoryDescription.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(236)))), ((int)(((byte)(243)))));
+            this.txtCategoryDescription.Location = new System.Drawing.Point(151, 73);
+            this.txtCategoryDescription.Multiline = true;
+            this.txtCategoryDescription.Name = "txtCategoryDescription";
+            this.txtCategoryDescription.Size = new System.Drawing.Size(260, 114);
+            this.txtCategoryDescription.TabIndex = 3;
             // 
             // btnCreateCategory
             // 
@@ -137,6 +137,7 @@
             this.btnCategoryUpdate.TabIndex = 9;
             this.btnCategoryUpdate.Text = "Kategori Güncelle";
             this.btnCategoryUpdate.UseVisualStyleBackColor = false;
+            this.btnCategoryUpdate.Click += new System.EventHandler(this.btnCategoryUpdate_Click);
             // 
             // btnCategoryDelete
             // 
@@ -147,6 +148,7 @@
             this.btnCategoryDelete.TabIndex = 10;
             this.btnCategoryDelete.Text = "Kategori Sil";
             this.btnCategoryDelete.UseVisualStyleBackColor = false;
+            this.btnCategoryDelete.Click += new System.EventHandler(this.btnCategoryDelete_Click);
             // 
             // Form1
             // 
@@ -161,7 +163,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCreateCategory);
-            this.Controls.Add(this.txtCtagoryDescription);
+            this.Controls.Add(this.txtCategoryDescription);
             this.Controls.Add(this.txtCategoryName);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnCategoryList);
@@ -176,7 +178,7 @@
         #endregion
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox txtCategoryName;
-        private System.Windows.Forms.TextBox txtCtagoryDescription;
+        private System.Windows.Forms.TextBox txtCategoryDescription;
         private System.Windows.Forms.Button btnCreateCategory;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
