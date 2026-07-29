@@ -1,7 +1,10 @@
-﻿using System;
+﻿using Dapper;
+using Project05_DapperNorthwind.Dtos.CategoryDtos;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,6 +18,14 @@ namespace Project05_DapperNorthwind
         public Form1()
         {
             InitializeComponent();
+        }
+
+        SqlConnection connection = new SqlConnection("Server = DESKTOP-81KICDV; initial catalog = Db5Project20; integrated security = true");
+            private async void btnCategoryList_Click(object sender, EventArgs e)
+        {
+            string query = "Select * From Categories";
+            var values = await connection.QueryAsync<ResultCategoryDto>(query);
+            dataGridView1.DataSource = values;
         }
     }
 }
