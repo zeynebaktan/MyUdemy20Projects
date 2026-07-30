@@ -3,6 +3,7 @@
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Text;
+using System.Text.Json.Nodes;
 
 Console.WriteLine("Api Consume İşlemine Hoş Geldiniz");
 Console.WriteLine();
@@ -147,5 +148,31 @@ if (number == "5")
         HttpResponseMessage response = await client.PutAsync(url, content);
         response.EnsureSuccessStatusCode();
     }
+}
+if (number == "6")
+{
+    string url = "https://localhost:7156/api/Weathers/GetByIdWeatherCity?id=";
+
+    Console.Write("Bilgilerini Getirmek İstediğiniz Id Değeri: ");
+    int id = int.Parse(Console.ReadLine());
+    Console.WriteLine();
+
+    using (HttpClient client = new HttpClient())
+    {
+        HttpResponseMessage response = await client.GetAsync(url + id);
+        response.EnsureSuccessStatusCode();
+        string responseBody = await response.Content.ReadAsStringAsync();
+        JObject weatherCityObject = JObject.Parse(responseBody);
+
+        string cityName = weatherCityObject["cityName"].ToString();
+        string detail = weatherCityObject["detail"].ToString();
+        string country = weatherCityObject["country"].ToString();
+        decimal temp = decimal.Parse(weatherCityObject["temp"].ToString());
+
+        Console.WriteLine("Girmiş olduğunuz Id değerine ait bilgiler: ");
+        Console.WriteLine();
+        Console.Write("Şehir: " + cityName + " Ülke: " + country + " Detay: " + detail + " Sıcaklık: " + temp);
+    }
+
 }
 Console.Read();
