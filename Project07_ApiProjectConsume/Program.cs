@@ -20,6 +20,7 @@ string number;
 
 Console.WriteLine("Tercihiniz:  ");
 number = Console.ReadLine();
+Console.WriteLine();
 
 if (number == "1")
 {
@@ -39,7 +40,21 @@ if (number == "1")
 
 if (number == "2")
 {
-    Console.WriteLine("Yeni Şehir Ekleme ALanı");
+    string url = "https://localhost:7156/api/Weathers";
+    using (HttpClient client = new HttpClient())
+    {
+        HttpResponseMessage response = await client.GetAsync(url);
+        string responseBody = await response.Content.ReadAsStringAsync();
+        JArray jArray = JArray.Parse(responseBody);
+        foreach (var item in jArray)
+        {
+            string cityName = item["cityName"].ToString();
+            string temp = item["temp"].ToString();
+            string country = item["country"].ToString();
+            Console.WriteLine(cityName + " - " + country + " - " + temp + " Derece");
+            Console.WriteLine("----------------------------------------------------------");
+        }
+    }
 }
 if (number == "3") 
 {
