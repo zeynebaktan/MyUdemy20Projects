@@ -107,5 +107,45 @@ if (number == "4")
     }
 }
 if (number == "5");
+{
+    string url = "https://localhost:7156/api/Weathers";
 
+    Console.WriteLine("### Veri Güncelleme İşlemi ###");
+    Console.WriteLine();
+    string cityName, country, detail;
+    decimal temp;
+    int cityId;
+
+    Console.Write("Şehir Adı: ");
+    cityName = Console.ReadLine();
+
+    Console.Write("Ülke Adı: ");
+    country = Console.ReadLine();
+
+    Console.Write("Hava Durumu Detayı: ");
+    detail = Console.ReadLine();
+
+    Console.Write("Sıcaklık: ");
+    temp = decimal.Parse(Console.ReadLine());
+
+    Console.WriteLine("Şehir Id: ");
+    cityId = int.Parse(Console.ReadLine());
+
+    var updatedWeatherValues = new
+    {
+        CityId = cityId,
+        CityName = cityName,
+        Country = country,
+        Detail = detail,
+        Temp = temp
+    };
+
+    using (HttpClient client = new HttpClient())
+    {
+        string json = JsonConvert.SerializeObject(updatedWeatherValues);
+        StringContent content = new StringContent(json, Encoding.UTF8, "application/json");
+        HttpResponseMessage response = await client.PutAsync(url, content);
+        response.EnsureSuccessStatusCode();
+    }
+}
 Console.Read();
