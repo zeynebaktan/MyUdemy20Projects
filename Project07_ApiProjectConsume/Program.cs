@@ -106,7 +106,7 @@ if (number == "4")
         response.EnsureSuccessStatusCode();
     }
 }
-if (number == "5");
+if (number == "5")
 {
     string url = "https://localhost:7156/api/Weathers";
 
