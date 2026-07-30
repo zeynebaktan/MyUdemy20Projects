@@ -94,8 +94,18 @@ if (number == "3")
     }
 }
 if (number == "4")
-{ 
+{
+    string url = "https://localhost:7156/api/Weathers?id=";
 
+    Console.Write("Silmek İstediğiniz ID Değeri: ");
+    int id = int .Parse(Console.ReadLine());
+
+    using HttpClient client = new HttpClient();
+    { 
+        HttpResponseMessage response = await client.DeleteAsync(url + id);
+        response.EnsureSuccessStatusCode();
+    }
 }
+if (number == "5");
 
 Console.Read();
