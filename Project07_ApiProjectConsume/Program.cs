@@ -1,13 +1,20 @@
-﻿Console.WriteLine("Api Consume İşlemine Hoş Geldiniz");
+﻿#region Menü_Başlangıcı
+
+using Newtonsoft.Json.Linq;
+
+Console.WriteLine("Api Consume İşlemine Hoş Geldiniz");
 Console.WriteLine();
 Console.WriteLine("### Yapmak İstediğiniz İşlemi Seçin ###");
 Console.WriteLine();
 Console.WriteLine("1- Şehir Listeleme");
-Console.WriteLine("2- Yeni Şehir Ekleme");
-Console.WriteLine("3- Şehir Silme");
-Console.WriteLine("4- Şehir Güncelleme");
-Console.WriteLine("5- ID'ye Göre Şehir Getirme");
+Console.WriteLine("2- Şehir ve Hava Durumu Listeleme");
+Console.WriteLine("3- Yeni Şehir Ekleme");
+Console.WriteLine("4- Şehir Silme");
+Console.WriteLine("5- Şehir Güncelleme");
+Console.WriteLine("6- ID'ye Göre Şehir Getirme");
 Console.WriteLine();
+
+#endregion
 
 string number;
 
@@ -16,8 +23,20 @@ number = Console.ReadLine();
 
 if (number == "1")
 {
-    Console.WriteLine("Şehir Listesi Buraya Gelecek");
+    string url = "https://localhost:7156/api/Weathers";
+    using (HttpClient client = new HttpClient())
+    {
+        HttpResponseMessage response = await client.GetAsync(url);
+        string responseBody = await response.Content.ReadAsStringAsync();
+        JArray jArray = JArray.Parse(responseBody);
+        foreach (var item in jArray)
+        {
+            string cityName = item["cityName"].ToString();
+            Console.WriteLine($"Şehir:  {cityName}");
+        }
+    }
 }
+
 if (number == "2")
 {
     Console.WriteLine("Yeni Şehir Ekleme ALanı");
@@ -27,5 +46,4 @@ if (number == "3")
     Console.WriteLine("Şehir Silme ALnaı");
 }
 
-Console.WriteLine(); 
-Console.WriteLine(); 
+Console.Read();
