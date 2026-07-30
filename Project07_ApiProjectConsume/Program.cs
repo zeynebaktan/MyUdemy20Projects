@@ -1,6 +1,8 @@
 ﻿#region Menü_Başlangıcı
 
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System.Text;
 
 Console.WriteLine("Api Consume İşlemine Hoş Geldiniz");
 Console.WriteLine();
@@ -37,7 +39,6 @@ if (number == "1")
         }
     }
 }
-
 if (number == "2")
 {
     string url = "https://localhost:7156/api/Weathers";
@@ -58,7 +59,43 @@ if (number == "2")
 }
 if (number == "3") 
 {
-    Console.WriteLine("Şehir Silme ALnaı");
+    Console.WriteLine("### Yeni Veri Girişi ###");
+    Console.WriteLine();
+    string cityName, country, detail;
+    decimal temp;
+
+    Console.Write("Şehir Adı: ");
+    cityName = Console.ReadLine();
+
+    Console.Write("Ülke Adı: ");
+    country = Console.ReadLine();
+
+    Console.Write("Hava Durumu Detayı: ");
+    detail = Console.ReadLine();
+
+    Console.Write("Sıcaklık: ");
+    temp = decimal.Parse(Console.ReadLine());
+
+    string url = "https://localhost:7156/api/Weathers";
+    var newWeatherCity = new
+    {
+        CityName = cityName,
+        Country = country,
+        Detail = detail,
+        Temp = temp
+    };
+
+    using (HttpClient client = new HttpClient())
+    {
+        string json = JsonConvert.SerializeObject(newWeatherCity);
+        StringContent content = new StringContent(json, Encoding.UTF8, "application/json");
+        HttpResponseMessage response = await client.PostAsync(url, content);
+        response.EnsureSuccessStatusCode();
+    }
+}
+if (number == "4")
+{ 
+
 }
 
 Console.Read();
