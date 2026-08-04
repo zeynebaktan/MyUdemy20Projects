@@ -6,4 +6,5 @@
   <Project Path="Project05_DapperNorthwind/Project05_DapperNorthwind.csproj" Id="38e37204-e42f-44b5-b0dc-9a6629bf908e" />
   <Project Path="Project06_ApiWeather/Project06_ApiWeather.csproj" Id="a318c62a-b4ac-4c82-bfe8-012145d711d6" />
   <Project Path="Project07_ApiProjectConsume/Project07_ApiProjectConsume.csproj" Id="29d4ceeb-dcfb-4e1f-8b04-ff1460ecdc29" />
+  <Project Path="Project08_RapidApiCurrency/Project08_RapidApiCurrency.csproj" Id="c88db617-0de7-4269-914e-547b23d1a813" />
 </Solution>
