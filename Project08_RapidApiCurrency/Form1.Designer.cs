@@ -63,6 +63,7 @@
             // 
             // txtUnitPrice
             // 
+            this.txtUnitPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(255)))), ((int)(((byte)(197)))));
             this.txtUnitPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtUnitPrice.Location = new System.Drawing.Point(186, 180);
             this.txtUnitPrice.Name = "txtUnitPrice";
@@ -82,6 +83,7 @@
             // rdbDollar
             // 
             this.rdbDollar.AutoSize = true;
+            this.rdbDollar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(255)))), ((int)(((byte)(197)))));
             this.rdbDollar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.rdbDollar.Location = new System.Drawing.Point(51, 136);
             this.rdbDollar.Name = "rdbDollar";
@@ -89,11 +91,12 @@
             this.rdbDollar.TabIndex = 6;
             this.rdbDollar.TabStop = true;
             this.rdbDollar.Text = "Dolar";
-            this.rdbDollar.UseVisualStyleBackColor = true;
+            this.rdbDollar.UseVisualStyleBackColor = false;
             // 
             // rdbEuro
             // 
             this.rdbEuro.AutoSize = true;
+            this.rdbEuro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(255)))), ((int)(((byte)(197)))));
             this.rdbEuro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.rdbEuro.Location = new System.Drawing.Point(143, 136);
             this.rdbEuro.Name = "rdbEuro";
@@ -101,11 +104,12 @@
             this.rdbEuro.TabIndex = 7;
             this.rdbEuro.TabStop = true;
             this.rdbEuro.Text = "Euro";
-            this.rdbEuro.UseVisualStyleBackColor = true;
+            this.rdbEuro.UseVisualStyleBackColor = false;
             // 
             // rdbPound
             // 
             this.rdbPound.AutoSize = true;
+            this.rdbPound.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(255)))), ((int)(((byte)(197)))));
             this.rdbPound.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.rdbPound.Location = new System.Drawing.Point(230, 136);
             this.rdbPound.Name = "rdbPound";
@@ -113,17 +117,18 @@
             this.rdbPound.TabIndex = 8;
             this.rdbPound.TabStop = true;
             this.rdbPound.Text = "Sterlin";
-            this.rdbPound.UseVisualStyleBackColor = true;
+            this.rdbPound.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(255)))), ((int)(((byte)(197)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.Location = new System.Drawing.Point(199, 248);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(155, 41);
             this.button1.TabIndex = 9;
             this.button1.Text = "İşlemi Yap";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
@@ -138,6 +143,7 @@
             // 
             // txtTotalPrice
             // 
+            this.txtTotalPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(255)))), ((int)(((byte)(197)))));
             this.txtTotalPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtTotalPrice.Location = new System.Drawing.Point(186, 214);
             this.txtTotalPrice.Name = "txtTotalPrice";
@@ -158,6 +164,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(255)))), ((int)(((byte)(197)))));
             this.ClientSize = new System.Drawing.Size(599, 338);
             this.Controls.Add(this.lblPound);
             this.Controls.Add(this.label2);
