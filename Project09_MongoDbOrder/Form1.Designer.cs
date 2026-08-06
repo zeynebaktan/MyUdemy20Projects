@@ -202,6 +202,7 @@
             this.btnUpdate.TabIndex = 18;
             this.btnUpdate.Text = "Güncelle";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnGetById
             // 
@@ -213,6 +214,7 @@
             this.btnGetById.TabIndex = 19;
             this.btnGetById.Text = "Getir";
             this.btnGetById.UseVisualStyleBackColor = false;
+            this.btnGetById.Click += new System.EventHandler(this.btnGetById_Click);
             // 
             // pictureBox1
             // 

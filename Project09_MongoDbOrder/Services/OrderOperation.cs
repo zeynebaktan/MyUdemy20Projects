@@ -46,5 +46,50 @@ namespace Project09_MongoDbOrder.Services
             }
             return orderList;
         }
+
+        public void DeleteOrder(string orderId)
+        {
+            var connection = new MongoDbConnection();
+            var ordersCollection = connection.GetOrdersCollection();
+            var filter = Builders<BsonDocument>.Filter.Eq("_id", ObjectId.Parse (orderId));
+            ordersCollection.DeleteOne(filter);
+        }
+
+        public void UpdateOrder(Order order)
+        { 
+            var connection = new MongoDbConnection();
+            var ordersCollection = connection.GetOrdersCollection();
+            var filter = Builders<BsonDocument>.Filter.Eq("_id", ObjectId.Parse (order.OrderId));
+            var updatedValue = Builders<BsonDocument>.Update
+                .Set("CustomerName", order.CustomerName)
+                .Set("District", order.District)
+                .Set("City", order.City)
+                .Set("TotalPrice", order.TotalPrice);
+            ordersCollection.UpdateOne(filter, updatedValue);
+        }
+
+        public Order GetByOrderId(string orderId)
+        { 
+            var connection = new MongoDbConnection();
+            var ordersCollection = connection.GetOrdersCollection();
+
+            var filter = Builders<BsonDocument>.Filter.Eq("_id", ObjectId.Parse (orderId));
+            var result = ordersCollection.Find(filter).FirstOrDefault();
+            if (result != null)
+            {
+                return new Order
+                {
+                    City = result["City"].ToString(),
+                    CustomerName = result["CustomerName"].ToString(),
+                    District = result["District"].ToString(),
+                    OrderId = orderId,
+                    TotalPrice = decimal.Parse (result["TotalPrice"].ToString())
+                };
+            }
+            else
+            {
+                return null;
+            }
+        }
     }
 }

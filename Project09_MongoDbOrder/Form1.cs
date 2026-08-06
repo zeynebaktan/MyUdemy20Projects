@@ -1,4 +1,5 @@
-﻿using Project09_MongoDbOrder.Entities;
+﻿using MongoDB.Bson.Serialization.Serializers;
+using Project09_MongoDbOrder.Entities;
 using Project09_MongoDbOrder.Services;
 using System;
 using System.Collections.Generic;
@@ -36,7 +37,30 @@ namespace Project09_MongoDbOrder
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            string orderId = txtId.Text;
+            orderOperation.DeleteOrder(orderId);
+            MessageBox.Show("Silme İşlemi Yapıldı.");
+        }
 
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            string id = txtId.Text;
+            var UpdateOrder = new Order
+            {
+                OrderId = id,
+                City = txtCity.Text,
+                CustomerName = txtCustomer.Text,
+                District = txtDistrict.Text,
+                TotalPrice = decimal.Parse(txtTotalPrice.Text)
+            };
+            orderOperation.UpdateOrder(UpdateOrder);
+        }
+
+        private void btnGetById_Click(object sender, EventArgs e)
+        {
+            string id = txtId.Text;
+            Order orders = orderOperation.GetByOrderId(id);
+            dataGridView1.DataSource = new List<Order> { orders };
         }
     }
 }
