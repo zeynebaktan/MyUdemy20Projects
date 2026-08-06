@@ -2,12 +2,6 @@
 using Project09_MongoDbOrder.Services;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Project09_MongoDbOrder
@@ -32,6 +26,17 @@ namespace Project09_MongoDbOrder
 
             orderOperation.AddOrder(order);
             MessageBox.Show("Ekleme İşlemi Yapıldı.");
+        }
+
+        private void btnList_Click(object sender, EventArgs e)
+        {
+            List<Order> orders = orderOperation.GetAllOrders();
+            dataGridView1.DataSource = orders;
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
