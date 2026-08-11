@@ -20,7 +20,8 @@ namespace Project11_TriggerOrderStock
             Console.WriteLine(" 2- Sipariş Listesi");
             Console.WriteLine(" 3- Kasa Durumu");
             Console.WriteLine(" 4- Yeni Ürün Satışı");
-            Console.WriteLine(" 5- Ürün Stok Güncelleme");
+            Console.WriteLine(" 5- İşlem Sayacı");
+            Console.WriteLine(" 6- Ürün Stok Güncelleme");
             Console.WriteLine();
             Console.WriteLine("----------------------------");
             Console.WriteLine();
@@ -86,6 +87,13 @@ namespace Project11_TriggerOrderStock
                 Console.WriteLine();
                 Console.WriteLine("---- Ürün Bilgileri ----");
             }
+
+            if (number == "5")
+            {
+                var values = context.TblProcess.Select(x => x.Process).FirstOrDefault();
+                Console.WriteLine("Toplam İşlem Sayısı: " + values);
+            }
+
             Console.Read();
         }
     }
