@@ -31,7 +31,7 @@ namespace Project11_TriggerOrderStock
 
             if (number == "1")
             { 
-                Console.WriteLine("----Ürün Listesi----");
+                Console.WriteLine("---- Ürün Listesi ----");
                 var values = context.TblProducts.ToList();
                 foreach (var item in values)
                 {
@@ -39,6 +39,53 @@ namespace Project11_TriggerOrderStock
                 }
             }
 
+            if (number == "2")
+            {
+                Console.WriteLine("---- Sipariş Listesi ----");
+                var values = context.TblOrder.ToList();
+                foreach (var item in values)
+                {
+                    Console.WriteLine(item.OrderId + "-" + item.TblProducts.ProductName + " Birim Fiyat: " + item.UnitPrice + " Adet: " + item.Quantity + " Toplam Fiyat: " + item.Total_Price);
+                }
+            }
+
+            if (number == "3")
+            {
+                Console.WriteLine("---- Kasa Durumu ----");
+                var values = context.TblCashRegister.Select(x =>x.Balance).FirstOrDefault();
+                Console.Write("Kasadaki Toplam Tutar: " + values + " TL");
+            }
+
+            if (number == "4")
+            {
+                Console.WriteLine("---- Yeni Ürün Sipariş Girişi ----");
+
+                Console.Write("Müşteri Adı: ");
+                string customer = Console.ReadLine();
+
+                Console.Write("Ürün Id: ");
+                int productId = int.Parse(Console.ReadLine());
+
+                Console.Write("Ürün Adedi: ");
+                int quantity = int.Parse(Console.ReadLine());
+
+                Console.WriteLine();
+
+                Console.WriteLine("---- Ürün Bilgileri ----");
+                Console.WriteLine();
+
+                var productName = context.TblProducts.Where(x => x.ProductId == productId).Select(y => y.ProductName).FirstOrDefault();
+                Console.WriteLine("Ürün Adı: " + productName);
+
+                var productUnitPrice = context.TblProducts.Where(x => x.ProductId == productId).Select(y => y.ProductPrice).FirstOrDefault();
+                Console.WriteLine("Birim Fiyat: " + productUnitPrice);
+
+                decimal totalPrice = quantity * decimal.Parse(productUnitPrice.ToString());
+                Console.WriteLine("Toplam Fiyat: " + totalPrice);
+
+                Console.WriteLine();
+                Console.WriteLine("---- Ürün Bilgileri ----");
+            }
             Console.Read();
         }
     }
