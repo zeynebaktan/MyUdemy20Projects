@@ -86,6 +86,16 @@ namespace Project11_TriggerOrderStock
 
                 Console.WriteLine();
                 Console.WriteLine("---- Ürün Bilgileri ----");
+
+                TblOrder tblOrder = new TblOrder();
+                tblOrder.UnitPrice = productUnitPrice;
+                tblOrder.ProductId = productId;
+                tblOrder.Quantity = quantity;
+                tblOrder.Total_Price = totalPrice;
+                tblOrder.Customer = customer;
+
+                context.TblOrder.Add(tblOrder);
+                context.SaveChanges();
             }
 
             if (number == "5")
