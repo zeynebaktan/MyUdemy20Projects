@@ -8,4 +8,6 @@
   <Project Path="Project07_ApiProjectConsume/Project07_ApiProjectConsume.csproj" Id="29d4ceeb-dcfb-4e1f-8b04-ff1460ecdc29" />
   <Project Path="Project08_RapidApiCurrency/Project08_RapidApiCurrency.csproj" Id="c88db617-0de7-4269-914e-547b23d1a813" />
   <Project Path="Project09_MongoDbOrder/Project09_MongoDbOrder.csproj" Id="d55d4b6e-73f9-49b8-878c-72b935653990" />
+  <Project Path="Project10_PostgreSQLToDoListApp/Project10_PostgreSQLToDoListApp.csproj" Id="b9a6e55b-3086-4c8a-b67c-1aeef4cd4fc6" />
+  <Project Path="Project11_TriggerOrderStock/Project11_TriggerOrderStock.csproj" Id="340103db-1c40-444d-b377-ea213716ebd1" />
 </Solution>
