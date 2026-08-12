@@ -11,4 +11,5 @@
   <Project Path="Project10_PostgreSQLToDoListApp/Project10_PostgreSQLToDoListApp.csproj" Id="b9a6e55b-3086-4c8a-b67c-1aeef4cd4fc6" />
   <Project Path="Project11_TriggerOrderStock/Project11_TriggerOrderStock.csproj" Id="340103db-1c40-444d-b377-ea213716ebd1" />
   <Project Path="Project12_JwtToken/Project12_JwtToken.csproj" Id="3f0c83e5-3016-47d1-9a82-cf82a5a90c62" />
+  <Project Path="Project13_WeatherApp/Project13_WeatherApp.csproj" Id="68e72935-b026-404d-93df-e4f0bb166863" />
 </Solution>
