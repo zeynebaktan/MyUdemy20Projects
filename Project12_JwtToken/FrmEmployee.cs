@@ -1,9 +1,11 @@
-﻿using System;
+﻿using Project12_JwtToken.JWT;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,20 +20,37 @@ namespace Project12_JwtToken
             InitializeComponent();
         }
 
+        public string tokenGet;
+
         SqlConnection sqlConnection = new SqlConnection("Server= DESKTOP-81KICDV; initial catalog=Db12Project20; integrated security=true");
 
         private void FrmEmployee_Load(object sender, EventArgs e)
         {
-            //if(yetki)
-            sqlConnection.Open();
-            SqlCommand command = new SqlCommand("Select * From TblEmployee", sqlConnection);
-            SqlDataAdapter adapter = new SqlDataAdapter(command);
-            DataTable dataTable = new DataTable();
-            adapter.Fill(dataTable);
-            dataGridView1.DataSource = dataTable;
-            sqlConnection.Close();
-            //else
-            //MesaggeBox.Show("Yetkiniz yoktur. Token oluşturmak için giriş yapınız.");
+            TokenValidator tokenValidator = new TokenValidator();
+
+            richTextBox1.Text = tokenGet;
+
+            var principal = tokenValidator.ValidateJwtToken(tokenGet);
+
+            if (principal != null)
+            {
+                string username = principal.FindFirst(JwtRegisteredClaimNames.Sub)?.Value;
+                MessageBox.Show("Hoşgeldiniz: " + username);
+
+                sqlConnection.Open();
+                SqlCommand command = new SqlCommand("Select * From TblEmployee", sqlConnection);
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                DataTable dataTable = new DataTable();
+                adapter.Fill(dataTable);
+                dataGridView1.DataSource = dataTable;
+                sqlConnection.Close();
+            }
+
+            else
+            { 
+                MessageBox.Show("Token geçersiz veya süresi dolmuş. Lütfen tekrar giriş yapın.");
+            }
+
         }
     }
 }
