@@ -14,4 +14,5 @@
   <Project Path="Project13_WeatherApp/Project13_WeatherApp.csproj" Id="68e72935-b026-404d-93df-e4f0bb166863" />
   <Project Path="Project14_SQLAllRelation/Project14_SQLAllRelations.csproj" Id="2dec98c4-b0a9-426d-9e32-3ff0324457a8" />
   <Project Path="Project15_GasPriceSimulation/Project15_GasPriceSimulation.csproj" Id="88f0f5c0-010a-4e9e-865e-ac345e63d893" />
+  <Project Path="Project16_MailRegister/Project16_MailRegister.csproj" Id="6b88de6a-b29a-4046-a60f-adef89c25e32" />
 </Solution>
