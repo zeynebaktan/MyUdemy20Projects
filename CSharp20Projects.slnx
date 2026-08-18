@@ -18,4 +18,5 @@
   <Project Path="Project17_KaggleDataset/Project17_KaggleDataset.csproj" Id="fc86c286-3887-4b27-b0fe-76f3242bc06d" />
   <Project Path="Project18_DashboardSuperStoreDataSet/Project18_DashboardSuperStoreDataSet.csproj" Id="d8b6c5e2-6ba5-4088-9c52-679d0c295b48" />
   <Project Path="Project19_TableStatusMomentary/Project19_TableStatusMomentary.csproj" Id="ae86bdfb-a684-41be-91bb-3c8189c71ea3" />
+  <Project Path="Project20_Final/Project20_Final.csproj" Id="74e456de-5e1b-4486-8750-b20592c80be0" />
 </Solution>
