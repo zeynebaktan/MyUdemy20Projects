@@ -16,4 +16,5 @@
   <Project Path="Project15_GasPriceSimulation/Project15_GasPriceSimulation.csproj" Id="88f0f5c0-010a-4e9e-865e-ac345e63d893" />
   <Project Path="Project16_MailRegister/Project16_MailRegister.csproj" Id="6b88de6a-b29a-4046-a60f-adef89c25e32" />
   <Project Path="Project17_KaggleDataset/Project17_KaggleDataset.csproj" Id="fc86c286-3887-4b27-b0fe-76f3242bc06d" />
+  <Project Path="Project18_DashboardSuperStoreDataSet/Project18_DashboardSuperStoreDataSet.csproj" Id="d8b6c5e2-6ba5-4088-9c52-679d0c295b48" />
 </Solution>
